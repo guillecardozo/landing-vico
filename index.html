@@ -22,26 +22,26 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
 
-   <script type="application/ld+json">
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Psychologist",
       "name": "Lic. Victoria Puig",
       "image": "image_00a466.png",
       "description": "Psicóloga Cognitivo-Conductual y Magíster en Psicología de la Salud y del Deporte en Montevideo.",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Lorenzo Justiniano Pérez 3233",
-        "addressLocality": "Montevideo",
-        "addressRegion": "Montevideo",
-        "postalCode": "11300",
-        "addressCountry": "UY"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "-34.906237",
-        "longitude": "-56.145890"
-      },
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Montevideo",
+          "addressCountry": "UY"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Ciudad de la Costa",
+          "addressRegion": "Canelones",
+          "addressCountry": "UY"
+        }
+      ],
       "url": "https://www.victoriapuig.com.uy",
       "telephone": "+59899945459",
       "priceRange": "$$",
@@ -146,11 +146,14 @@
                     class="nav-link text-xs uppercase tracking-widest font-medium text-stone-600 hover:text-stone-900">Propuesta</a>
                 <a href="#servicios"
                     class="nav-link text-xs uppercase tracking-widest font-medium text-stone-600 hover:text-stone-900">Servicios</a>
-                <a href="#opiniones"
-                    class="nav-link text-xs uppercase tracking-widest font-medium text-stone-600 hover:text-stone-900">Opiniones</a>
-                <a href="https://wa.me/59899945459" target="_blank" class="bg-[#E88D7D] text-white px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#D67A6B] transition-all btn-shadow flex items-center space-x-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.893-11.893 11.893-2.007 0-3.967-.505-5.717-1.46l-6.276 1.676zm6.302-4.212l.363.216c1.336.796 2.871 1.216 4.442 1.216 4.703 0 8.532-3.829 8.532-8.532 0-2.274-.885-4.413-2.493-6.022-1.607-1.607-3.747-2.492-6.039-2.492-4.704 0-8.532 3.828-8.532 8.532 0 1.67.481 3.303 1.391 4.73l.237.373-1.001 3.655 3.748-.976zm10.706-5.074c-.244-.122-1.444-.712-1.668-.794-.223-.082-.387-.122-.549.123-.162.244-.629.794-.771.957-.142.163-.284.183-.528.061-.243-.122-1.028-.38-1.958-1.209-.724-.647-1.213-1.447-1.355-1.691-.142-.244-.015-.376.107-.497.111-.109.244-.285.365-.427.122-.142.162-.244.244-.406.081-.163.041-.305-.021-.427-.06-.122-.549-1.321-.751-1.811-.197-.473-.396-.409-.549-.417-.142-.008-.305-.008-.468-.008-.162 0-.427.061-.65.284-.224.224-.854.834-.854 2.035 0 1.201.874 2.36 1.012 2.541.139.181 1.72 2.626 4.167 3.682.582.251 1.036.401 1.391.513.584.186 1.116.16 1.536.097.469-.071 1.444-.59 1.648-1.159.203-.569.203-1.057.142-1.159-.061-.102-.224-.162-.468-.284z"/>
+                <!-- <a href="#opiniones"
+                    class="nav-link text-xs uppercase tracking-widest font-medium text-stone-600 hover:text-stone-900">Opiniones</a> -->
+                <a href="https://wa.me/59899945459" target="_blank"
+                    class="bg-[#E88D7D] text-white px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#D67A6B] transition-all btn-shadow flex items-center space-x-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.893-11.893 11.893-2.007 0-3.967-.505-5.717-1.46l-6.276 1.676zm6.302-4.212l.363.216c1.336.796 2.871 1.216 4.442 1.216 4.703 0 8.532-3.829 8.532-8.532 0-2.274-.885-4.413-2.493-6.022-1.607-1.607-3.747-2.492-6.039-2.492-4.704 0-8.532 3.828-8.532 8.532 0 1.67.481 3.303 1.391 4.73l.237.373-1.001 3.655 3.748-.976zm10.706-5.074c-.244-.122-1.444-.712-1.668-.794-.223-.082-.387-.122-.549.123-.162.244-.629.794-.771.957-.142.163-.284.183-.528.061-.243-.122-1.028-.38-1.958-1.209-.724-.647-1.213-1.447-1.355-1.691-.142-.244-.015-.376.107-.497.111-.109.244-.285.365-.427.122-.142.162-.244.244-.406.081-.163.041-.305-.021-.427-.06-.122-.549-1.321-.751-1.811-.197-.473-.396-.409-.549-.417-.142-.008-.305-.008-.468-.008-.162 0-.427.061-.65.284-.224.224-.854.834-.854 2.035 0 1.201.874 2.36 1.012 2.541.139.181 1.72 2.626 4.167 3.682.582.251 1.036.401 1.391.513.584.186 1.116.16 1.536.097.469-.071 1.444-.59 1.648-1.159.203-.569.203-1.057.142-1.159-.061-.102-.224-.162-.468-.284z" />
                     </svg>
                     <span>Contactame</span>
                 </a>
@@ -171,8 +174,9 @@
             <a href="#inicio" onclick="toggleMenu()" class="text-xl font-medium">Inicio</a>
             <a href="#mi-propuesta" onclick="toggleMenu()" class="text-xl font-medium">Mi Propuesta</a>
             <a href="#servicios" onclick="toggleMenu()" class="text-xl font-medium">Servicios</a>
-            <a href="#opiniones" onclick="toggleMenu()" class="text-xl font-medium">Opiniones</a>
-           <a href="https://wa.me/59899945459" target="_blank" onclick="toggleMenu()" class="bg-[#E88D7D] text-white px-6 py-3 rounded-xl font-medium flex items-center justify-center space-x-2">
+            <!-- <a href="#opiniones" onclick="toggleMenu()" class="text-xl font-medium">Opiniones</a> -->
+            <a href="https://wa.me/59899945459" target="_blank" onclick="toggleMenu()"
+                class="bg-[#E88D7D] text-white px-6 py-3 rounded-xl font-medium flex items-center justify-center space-x-2">
                 <span>Contactame</span>
             </a>
         </div>
@@ -196,7 +200,7 @@
 
                     <div class="prose prose-lg text-stone-600 leading-relaxed space-y-6 mx-auto lg:mx-0 max-w-2xl">
                         <p>
-                            La Terapia Cognitivo-Conductual es un enfoque basado en la evidencia que ha demostrado
+                            La Terapia Cognitivo-Conductual es un enfoque basado en evidencia que ha demostrado
                             eficacia en problemas como la ansiedad, la depresión, los ataques de pánico, la baja
                             autoestima y el manejo del estrés.
                         </p>
@@ -246,7 +250,7 @@
                 <div class="text-center mb-16 md:mb-24">
                     <h2 class="text-3xl md:text-5xl text-stone-900 mb-6 font-bold">Un compromiso compartido</h2>
                     <p class="text-lg md:text-xl text-stone-500 font-light leading-relaxed max-w-3xl mx-auto">
-                        Orientado a objetivos, donde trabajamos juntos y juntas, paso a paso, para acercarte a una vida
+                        Orientado a objetivos, donde trabajaremos paso a paso, para acercarte a una vida
                         más alineada con lo que querés.
                     </p>
                 </div>
@@ -267,11 +271,9 @@
                                 plenamente.
                             </p>
                             <p>
-                                Buscaremos juntos <span
-                                    class="font-semibold text-stone-900 border-b-2 border-[#E88D7D]/30">entender</span>
-                                profundamente qué te está pasando y por qué, estableciendo <span
-                                    class="font-semibold text-stone-900 border-b-2 border-[#E88D7D]/30">objetivos
-                                    terapéuticos</span> definidos en conjunto que iremos revisando a lo largo del
+                                Estableceremos <span
+                                    class="font-semibold text-stone-900 border-b-2 border-[#E88D7D]/30">objetivos</span>
+                                </span> en conjunto que iremos revisando a lo largo del
                                 camino.
                             </p>
                             <p>
@@ -321,32 +323,11 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="grid md:grid-cols-3 gap-8 mt-12">
-                    <div
-                        class="p-8 md:p-10 rounded-3xl bg-white border border-stone-100 shadow-sm transition-all hover:bg-[#FFF5F2] hover:border-[#F5E6E1]">
-                        <h3 class="text-xl md:text-2xl mb-4 text-[#E88D7D] font-bold">Ansiedad y Pánico</h3>
-                        <p class="text-stone-500 leading-relaxed text-sm md:text-base">Herramientas prácticas para
-                            recuperar el control frente a la ansiedad, fobias y ataques de pánico mediante la TCC.</p>
-                    </div>
-                    <div
-                        class="p-8 md:p-10 rounded-3xl bg-white border border-stone-100 shadow-sm transition-all hover:bg-[#FFF5F2] hover:border-[#F5E6E1]">
-                        <h3 class="text-xl md:text-2xl mb-4 text-[#E88D7D] font-bold">Salud y Deporte</h3>
-                        <p class="text-stone-500 leading-relaxed text-sm md:text-base">Gestión del rendimiento y hábitos
-                            saludables desde una visión integral para deportistas y personas activas.</p>
-                    </div>
-                    <div
-                        class="p-8 md:p-10 rounded-3xl bg-white border border-stone-100 shadow-sm transition-all hover:bg-[#FFF5F2] hover:border-[#F5E6E1]">
-                        <h3 class="text-xl md:text-2xl mb-4 text-[#E88D7D] font-bold">Estrés y Bienestar</h3>
-                        <p class="text-stone-500 leading-relaxed text-sm md:text-base">Estrategias efectivas para la
-                            toma de decisiones y manejo del estrés laboral o personal en el día a día.</p>
-                    </div>
-                </div>
             </div>
         </section>
 
         <!-- Opiniones -->
-        <section id="opiniones" class="py-24 px-4 sm:px-6 bg-[#FFF5F2] scroll-mt-20">
+        <!-- <section id="opiniones" class="py-24 px-4 sm:px-6 bg-[#FFF5F2] scroll-mt-20">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="text-3xl md:text-5xl mb-8 text-stone-900 font-bold">Opiniones de pacientes</h2>
@@ -388,7 +369,6 @@
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <!-- Reseña 1 -->
                     <div
                         class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between hover:shadow-md transition">
                         <div>
@@ -415,7 +395,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Reseña 2 -->
                     <div
                         class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between hover:shadow-md transition">
                         <div>
@@ -442,7 +421,6 @@
                             </p>
                         </div>
                     </div>
-                    <!-- Reseña 3 -->
                     <div
                         class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between hover:shadow-md transition">
                         <div>
@@ -481,90 +459,73 @@
                     </a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- Agenda y Contacto -->
-        <section id="contacto" class="py-24 md:py-32 px-4 sm:px-6 bg-white border-t border-stone-100 scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-                    <div class="space-y-12">
-                        <div class="text-left">
-                            <h2 class="text-4xl md:text-5xl mb-8 text-stone-900 font-bold">Agenda tu consulta</h2>
-                            <div class="border-l-4 border-[#E88D7D]/30 pl-6 md:pl-8 italic">
-                                <p class="text-lg md:text-xl text-stone-500 font-light leading-relaxed">
-                                    Elegir psicóloga lleva tiempo y confianza. Por eso busco que este sea un espacio
-                                    cómodo y cercano, donde puedas conocerme y decidir con tranquilidad si este proceso
-                                    es para vos.
-                                </p>
-                            </div>
-                        </div>
+        <section id="contacto" class="py-24 md:py-32 px-4 sm:px-6 bg-white border-t border-stone-200 scroll-mt-20">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl mb-8 text-stone-900 font-bold">Agenda tu consulta</h2>
 
-                        <div class="bg-stone-50 p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-stone-100">
-                            <form id="contactForm" class="space-y-6">
-                                <input type="text" name="_gotcha" style="display:none">
-
-                                <div class="grid sm:grid-cols-2 gap-4">
-                                    <div class="space-y-1">
-                                        <label for="name"
-                                            class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1">Nombre</label>
-                                        <input type="text" id="name" name="name" placeholder="Tu nombre" required
-                                            class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all">
-                                    </div>
-                                    <div class="space-y-1">
-                                        <label for="email"
-                                            class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1">Email</label>
-                                        <input type="email" id="email" name="email" placeholder="Tu email" required
-                                            class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all">
-                                    </div>
-                                </div>
-                                <div class="space-y-1">
-                                    <label for="message"
-                                        class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1">Mensaje</label>
-                                    <textarea id="message" name="message" rows="3" placeholder="¿En qué puedo ayudarte?"
-                                        class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all"></textarea>
-                                </div>
-
-                                <button type="submit" id="submitBtn"
-                                    class="w-full bg-[#E88D7D] text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-[#D67A6B] transition-all btn-shadow">
-                                    Enviar Consulta
-                                </button>
-
-                                <div id="formStatus"
-                                    class="hidden text-center p-4 rounded-2xl font-medium text-sm transition-all duration-300">
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- Accesos Directos Responsivos -->
-                        <div class="flex flex-col sm:flex-row gap-8 sm:gap-12 px-2">
-                            <div class="space-y-2">
-                                <p class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">WhatsApp</p>
-                                <a href="https://wa.me/59899945459" target="_blank"
-                                    class="text-lg text-stone-800 hover:text-[#E88D7D] transition-colors font-medium flex items-center">
-                                    <span class="mr-2">🇺🇾</span> +598 99 945 459
-                                </a>
-                            </div>
-                            <div class="space-y-2">
-                                <p class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Email</p>
-                                <a href="mailto:victoriapuiggomez@gmail.com"
-                                    class="text-lg text-stone-800 hover:text-[#E88D7D] transition-colors font-medium">victoriapuiggomez@gmail.com</a>
-                            </div>
-                        </div>
+                    <!-- Nueva información destacada -->
+                    <div
+                        class="mb-10 inline-block bg-[#FFF5F2] px-6 py-3 rounded-2xl border border-[#F5E6E1] text-[#E88D7D] font-medium text-lg animate-fade-in">
+                        Consulta Presencial en Pocitos y Ciudad de la Costa
                     </div>
 
-                   <div class="space-y-8 lg:sticky lg:top-32 text-left">
-                        <div class="bg-white p-2 rounded-[2.5rem] md:rounded-[3.5rem] shadow-2xl overflow-hidden map-container h-[400px] md:h-[450px] relative border-[8px] border-stone-50">
-                            <iframe 
-                                title="Ubicación Lic. Victoria Puig en Montevideo"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.5083161044464!2d-56.14588972343899!3d-34.90623697386762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f811340b33411%3A0xe5a363717dfb1191!2sLorenzo%20Justiniano%20P%C3%A9rez%203233%2C%2011300%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2suy!4v1709664532000!5m2!1ses!2suy" 
-                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
+                    <p
+                        class="text-lg md:text-xl text-stone-500 font-light leading-relaxed max-w-2xl mx-auto italic border-l-4 border-[#E88D7D]/30 pl-6 md:pl-0 border-l-0">
+                        Elegir psicóloga lleva tiempo y confianza. Por eso busco que este sea un espacio cómodo y
+                        cercano, donde puedas conocerme y decidir con tranquilidad si este proceso es para vos.
+                    </p>
+                </div>
+
+                <div class="bg-stone-50 p-8 md:p-10 rounded-[2.5rem] shadow-sm border border-stone-100">
+                    <form id="contactForm" class="space-y-6">
+                        <input type="text" name="_gotcha" style="display:none">
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div class="space-y-1">
+                                <label for="name"
+                                    class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1">Nombre</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required
+                                    class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all">
+                            </div>
+                            <div class="space-y-1">
+                                <label for="email"
+                                    class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Tu email" required
+                                    class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all">
+                            </div>
                         </div>
-                        <div class="px-6 space-y-2 text-left">
-                            <h4 class="text-xl font-bold text-stone-900 text-left">Consulta Presencial en Montevideo</h4>
-                            <p class="text-stone-500 text-sm leading-relaxed text-left">Lorenzo Justiniano Pérez 3233, Pocitos, Montevideo.<br>Uruguay.</p>
-                            <a href="https://maps.app.goo.gl/fhdGuMZu7BaUwXXe9" target="_blank" class="inline-block mt-3 text-salmon text-xs font-bold uppercase tracking-widest border-b-2 border-salmon pb-1 text-left">Ver en Google Maps</a>
+                        <div class="space-y-1">
+                            <label for="message"
+                                class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1">Mensaje</label>
+                            <textarea id="message" name="message" rows="3" placeholder="¿En qué puedo ayudarte?"
+                                class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all"></textarea>
                         </div>
+
+                        <button type="submit" id="submitBtn"
+                            class="w-full bg-[#E88D7D] text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-[#D67A6B] transition-all btn-shadow">
+                            Enviar Consulta
+                        </button>
+
+                        <div id="formStatus"
+                            class="hidden text-center p-4 rounded-2xl font-medium text-sm transition-all duration-300">
+                        </div>
+                    </form>
+                </div>
+
+               <div class="flex flex-col sm:flex-row gap-8 justify-center mt-16 text-center">
+                    <div class="space-y-2">
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">WhatsApp</p>
+                        <a href="https://wa.me/59899945459" target="_blank" class="text-lg text-stone-800 hover:text-salmon transition font-medium flex items-center justify-center">
+                             +598 99 945 459
+                        </a>
+                    </div>
+                    <div class="space-y-2">
+                        <p class="text-[10px] uppercase tracking-widest text-stone-400 font-bold">Email</p>
+                        <a href="mailto:victoriapuiggomez@gmail.com" class="text-lg text-stone-800 hover:text-salmon transition font-medium">victoriapuiggomez@gmail.com</a>
                     </div>
                 </div>
             </div>
@@ -573,30 +534,24 @@
 
     <!-- Footer -->
     <footer class="bg-stone-900 text-stone-400 py-16 md:py-20 px-6">
-        <div
-            class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 text-center md:text-left">
-            <div class="space-y-6">
-                <div class="flex items-center space-x-3 justify-center md:justify-start">
-                    <img src="img/logo.svg" alt="Icono Marca"
-                        class="h-10 w-auto filter brightness-0 invert opacity-70">
-                    <div class="text-2xl font-semibold text-white leading-none">Lic. Victoria Puig</div>
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 text-center md:text-left">
+            <div>
+                <div class="flex items-center space-x-3 mb-4 md:justify-start justify-center">
+                    <img src="img/logo.svg" alt="Logo Lic. Victoria Puig" class="h-8 w-auto filter brightness-0 invert opacity-80">
+                    <div class="text-2xl font-semibold text-white leading-none font-title">Lic. Victoria Puig</div>
                 </div>
-                <p class="max-w-xs mx-auto md:mx-0 text-sm leading-relaxed text-stone-400">
-                    Terapia Cognitivo-Conductual con rigor científico y calidez humana. Especializada en Salud y
-                    Deporte.
-                </p>
+                <p class="max-w-xs mx-auto md:mx-0 text-left text-sm leading-relaxed">Terapia Cognitivo-Conductual con rigor científico y calidez humana en Montevideo y Ciudad de la Costa.</p>
             </div>
-
-            <div class="grid grid-cols-2 gap-12 text-sm">
-                <div class="space-y-4">
-                    <h4 class="text-white font-bold uppercase tracking-[0.2em] text-[10px]">Ubicación</h4>
-                    <p class="text-stone-400">Montevideo, Uruguay</p>
-                    <p class="text-stone-400">Sesiones Online y Presenciales</p>
+            <div class="flex space-x-12 text-sm text-right">
+                <div class="text-left">
+                    <h4 class="text-white font-medium mb-3 uppercase tracking-widest text-xs">Ubicaciones</h4>
+                    <p class="text-stone-300">Pocitos, Montevideo</p>
+                    <p class="text-stone-300">Ciudad de la Costa, Canelones</p>
                 </div>
-                <div class="space-y-4">
-                    <h4 class="text-white font-bold uppercase tracking-[0.2em] text-[10px]">Legal</h4>
-                    <a href="#" class="block hover:text-white transition-colors">Privacidad</a>
-                    <a href="#" class="block hover:text-white transition-colors">Aviso Legal</a>
+                <div class="text-left">
+                    <h4 class="text-white font-medium mb-3 uppercase tracking-widest text-xs">Atención</h4>
+                    <p class="text-stone-300">Presencial & Online</p>
+                    <a href="https://wa.me/59899945459" target="_blank" class="text-salmon font-bold">WhatsApp →</a>
                 </div>
             </div>
         </div>
