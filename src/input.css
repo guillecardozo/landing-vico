@@ -1,0 +1,162 @@
+/*
+ * Fuente del CSS del sitio. Se compila con:
+ *
+ *     npm run css        ->  genera ./styles.css (minificado, commiteado)
+ *
+ * IMPORTANTE: si agregás una clase de Tailwind nueva en el HTML tenés que
+ * volver a correr `npm run css`, si no la clase no existe en styles.css y
+ * no hace nada. (El workflow de GitHub Actions lo hace solo al pushear.)
+ */
+
+/* --- Fuentes autohospedadas --------------------------------------------- */
+/* Variables (un archivo cubre todo el rango de pesos), subset latin.
+   Autohospedadas para evitar dos round-trips a fonts.googleapis.com +
+   fonts.gstatic.com en el camino crítico del render. */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url('/fonts/inter-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('/fonts/playfair-display-latin-var.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Estilos propios ------------------------------------------------------
+   Van fuera de @layer, al final, para conservar el mismo orden de cascada
+   que tenía el bloque <style> embebido en index.html. */
+
+:root {
+  --pastel-salmon: #FFF5F2;
+  /* Interactivo / texto. Cumple WCAG AA (4.79:1 sobre blanco). */
+  --salmon: #AD4E3B;
+  /* Decorativo: fondos, bordes, blobs. NUNCA texto sobre blanco (2.46:1). */
+  --salmon-accent: #E88D7D;
+  --text-main: #4A4442;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  background-color: #fdfcfb;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.15;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--salmon-accent);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.brand-logo {
+  max-height: 38px;
+  width: auto;
+  object-fit: contain;
+}
+
+.map-container {
+  filter: grayscale(0.1) sepia(0.1);
+  transition: all 0.5s ease;
+}
+
+.map-container:hover {
+  filter: none;
+}
+
+.btn-shadow {
+  box-shadow: 0 10px 25px -5px rgba(173, 78, 59, 0.35);
+}
+
+.details-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  margin-top: 1rem;
+}
+
+.details-content.open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.rotate-icon svg {
+  transition: transform 0.3s ease;
+}
+
+.rotate-icon.open svg {
+  /* convierte + en × */
+  transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    line-height: 1.1 !important;
+  }
+
+  section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+
+  .hero-section {
+    padding-top: 7rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,44 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-UY">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Básico -->
-    <title>Lic. Victoria Puig | Psicóloga Cognitivo Conductual en Montevideo</title>
+    <title>Psicóloga en Montevideo y Ciudad de la Costa | Lic. Victoria Puig</title>
     <meta name="description"
-        content="Psicóloga Lic. Victoria Puig. Terapia Cognitivo-Conductual y Magíster en Psicología de la Salud y el Deporte en Montevideo. Acompañamiento integral para bienestar y salud mental.">
-    <meta name="keywords"
-        content="Psicóloga Montevideo, TCC Uruguay, Terapia Cognitivo Conductual, Victoria Puig, Psicología del Deporte, Ansiedad, Depresión">
-    <link rel="canonical" href="https://www.victoriapuig.com">
+        content="Lic. Victoria Puig, psicóloga cognitivo-conductual. Consulta presencial en Pocitos (Montevideo) y Solymar (Ciudad de la Costa), y sesiones online.">
+    <link rel="canonical" href="https://victoriapuig.com/">
 
     <!-- SEO / Social previews / Performance -->
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#E88D7D">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="theme-color" content="#AD4E3B">
+    <meta name="geo.region" content="UY-MO">
+    <meta name="geo.placename" content="Montevideo">
+    <meta name="geo.position" content="-34.907367;-56.1455229">
+    <meta name="ICBM" content="-34.907367, -56.1455229">
 
     <meta property="og:locale" content="es_UY">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Lic. Victoria Puig | Psicóloga Cognitivo Conductual">
-    <meta property="og:description" content="Psicóloga Lic. Victoria Puig. Terapia Cognitivo-Conductual y Magíster en Psicología de la Salud y el Deporte en Montevideo.">
-    <meta property="og:url" content="https://www.victoriapuig.com">
-    <meta property="og:image" content="https://www.victoriapuig.com/img/foto_victoria_puig.webp">
+    <meta property="og:site_name" content="Lic. Victoria Puig — Psicóloga">
+    <meta property="og:title" content="Psicóloga en Montevideo y Ciudad de la Costa | Lic. Victoria Puig">
+    <meta property="og:description" content="Terapia Cognitivo-Conductual con Lic. Victoria Puig. Presencial en Pocitos (Montevideo) y Solymar (Ciudad de la Costa), y sesiones online.">
+    <meta property="og:url" content="https://victoriapuig.com/">
+    <meta property="og:image" content="https://victoriapuig.com/img/og-victoria-puig-1200x630.jpg">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Lic. Victoria Puig, psicóloga cognitivo-conductual en Montevideo y Ciudad de la Costa">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Lic. Victoria Puig">
-    <meta name="twitter:description" content="Psicóloga Cognitivo-Conductual en Montevideo.">
-    <meta name="twitter:image" content="https://www.victoriapuig.com/img/foto_victoria_puig.webp">
-    <meta name="twitter:creator" content="@victoriapuig.psico">
+    <meta name="twitter:title" content="Psicóloga en Montevideo y Ciudad de la Costa | Lic. Victoria Puig">
+    <meta name="twitter:description" content="Terapia Cognitivo-Conductual. Presencial en Pocitos y Solymar, y sesiones online.">
+    <meta name="twitter:image" content="https://victoriapuig.com/img/og-victoria-puig-1200x630.jpg">
+    <meta name="twitter:image:alt" content="Lic. Victoria Puig, psicóloga cognitivo-conductual en Montevideo y Ciudad de la Costa">
 
     <!-- Autor y alternates -->
     <meta name="author" content="Lic. Victoria Puig">
-    <link rel="alternate" href="https://www.victoriapuig.com" hreflang="es-UY">
+    <link rel="alternate" href="https://victoriapuig.com/" hreflang="es-UY">
+    <link rel="alternate" href="https://victoriapuig.com/" hreflang="x-default">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="img/foto_victoria_puig.webp">
+    <!-- Verificación de Search Console (respaldo del archivo googlebb16881efbb0a6eb.html) -->
+    <meta name="google-site-verification" content="googlebb16881efbb0a6eb.html">
+
+    <link rel="preload" as="image" href="img/foto_victoria_puig-800.webp"
+        imagesrcset="img/foto_victoria_puig-400.webp 400w, img/foto_victoria_puig-600.webp 600w, img/foto_victoria_puig-800.webp 800w, img/foto_victoria_puig-1066.webp 1066w"
+        imagesizes="(min-width: 1024px) 448px, min(384px, 92vw)" fetchpriority="high">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -47,212 +56,273 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
 
-    <!-- Fuentes y Frameworks -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
+    <!-- Estilos: Tailwind compilado + fuentes autohospedadas (ver README) -->
+    <link rel="preload" href="fonts/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/playfair-display-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles.css">
 
+    <!-- Grafo de datos estructurados: identidad, consultorio, servicios y FAQ enlazados por @id -->
     <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
         {
-            "@context": "https://schema.org",
-            "@type": "Psychologist",
-            "name": "Lic. Victoria Puig",
-            "image": "https://www.victoriapuig.com/img/foto_victoria_puig.webp",
-            "description": "Psicóloga Cognitivo-Conductual y Magíster en Psicología de la Salud y el Deporte en Montevideo.",
-            "address": [
-                {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Montevideo",
-                    "addressCountry": "UY"
-                },
-                {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Ciudad de la Costa",
-                    "addressRegion": "Canelones",
-                    "addressCountry": "UY"
-                }
-            ],
-            "url": "https://www.victoriapuig.com",
+          "@type": "WebSite",
+          "@id": "https://victoriapuig.com/#website",
+          "url": "https://victoriapuig.com/",
+          "name": "Lic. Victoria Puig — Psicóloga",
+          "inLanguage": "es-UY",
+          "publisher": { "@id": "https://victoriapuig.com/#practice" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://victoriapuig.com/#victoria",
+          "name": "Victoria Puig",
+          "alternateName": "María Victoria Puig Gómez",
+          "givenName": "Victoria",
+          "familyName": "Puig",
+          "honorificPrefix": "Lic.",
+          "jobTitle": "Psicóloga Cognitivo-Conductual",
+          "description": "Psicóloga cognitivo-conductual y Magíster en Psicología de la Salud y del Deporte, habilitada por el Ministerio de Salud Pública del Uruguay. Atiende de forma presencial en Pocitos (Montevideo) y Solymar (Ciudad de la Costa), y online.",
+          "image": "https://victoriapuig.com/img/foto_victoria_puig-800.webp",
+          "url": "https://victoriapuig.com/",
+          "telephone": "+59899945459",
+          "knowsLanguage": ["es"],
+          "identifier": {
+            "@type": "PropertyValue",
+            "name": "Caja de Profesionales Universitarios del Uruguay",
+            "value": "159578"
+          },
+          "hasOccupation": {
+            "@type": "Occupation",
+            "name": "Psicóloga",
+            "occupationalCategory": "2634 Psicólogos",
+            "sameAs": "https://www.wikidata.org/wiki/Q212980"
+          },
+          "hasCredential": [
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "educationalLevel": "Licenciatura",
+              "name": "Licenciatura en Psicología"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "degree",
+              "educationalLevel": "Maestría",
+              "name": "Magíster en Psicología de la Salud y del Deporte"
+            },
+            {
+              "@type": "EducationalOccupationalCredential",
+              "credentialCategory": "Habilitación profesional",
+              "name": "Habilitación para el ejercicio de la psicología en Uruguay",
+              "identifier": "159578",
+              "recognizedBy": {
+                "@type": "GovernmentOrganization",
+                "name": "Ministerio de Salud Pública del Uruguay",
+                "url": "https://www.gub.uy/ministerio-salud-publica/"
+              }
+            }
+          ],
+          "knowsAbout": [
+            { "@type": "Thing", "name": "Terapia cognitivo-conductual", "sameAs": "https://www.wikidata.org/wiki/Q1147152" },
+            { "@type": "Thing", "name": "Psicología del deporte", "sameAs": "https://www.wikidata.org/wiki/Q632190" },
+            { "@type": "Thing", "name": "Trastornos de ansiedad", "sameAs": "https://www.wikidata.org/wiki/Q544006" },
+            "Manejo del estrés",
+            "Cambio de hábitos",
+            "Regulación emocional",
+            "Rendimiento deportivo"
+          ],
+          "worksFor": { "@id": "https://victoriapuig.com/#practice" },
+          "sameAs": ["https://www.instagram.com/victoriapuig.psico"]
+        },
+        {
+          "@type": ["Psychologist", "LocalBusiness"],
+          "@id": "https://victoriapuig.com/#practice",
+          "name": "Lic. Victoria Puig — Psicóloga",
+          "description": "Psicóloga cognitivo-conductual en Montevideo y Ciudad de la Costa. Consulta presencial en Pocitos y Solymar, y sesiones online.",
+          "url": "https://victoriapuig.com/",
+          "telephone": "+59899945459",
+          "image": "https://victoriapuig.com/img/foto_victoria_puig-800.webp",
+          "logo": "https://victoriapuig.com/img/logo-320.png",
+          "currenciesAccepted": "UYU",
+          "founder": { "@id": "https://victoriapuig.com/#victoria" },
+          "employee": { "@id": "https://victoriapuig.com/#victoria" },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Lorenzo Justiniano Pérez esq. 26 de Marzo",
+            "addressLocality": "Montevideo",
+            "addressRegion": "Montevideo",
+            "postalCode": "11300",
+            "addressCountry": "UY"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -34.907367,
+            "longitude": -56.1455229
+          },
+          "areaServed": [
+            { "@type": "City", "name": "Montevideo", "sameAs": "https://www.wikidata.org/wiki/Q1335" },
+            { "@type": "City", "name": "Ciudad de la Costa", "sameAs": "https://www.wikidata.org/wiki/Q869403" },
+            { "@type": "Place", "name": "Pocitos" },
+            { "@type": "Place", "name": "Solymar" },
+            { "@type": "AdministrativeArea", "name": "Canelones" },
+            { "@type": "Country", "name": "Uruguay", "sameAs": "https://www.wikidata.org/wiki/Q77" }
+          ],
+          "availableLanguage": { "@type": "Language", "name": "Spanish", "alternateName": "es" },
+          "hasOfferCatalog": { "@id": "https://victoriapuig.com/#servicios" },
+          "contactPoint": [{
+            "@type": "ContactPoint",
             "telephone": "+59899945459",
-            "priceRange": "$$",
-            "knowsAbout": ["Ansiedad", "Depresión", "TCC", "Psicología del Deporte"],
-            "sameAs": [
-                "https://www.instagram.com/victoriapuig.psico",
-                "https://wa.me/59899945459"
-            ]
-        }
-    </script>
-
-    <!-- FAQ schema para mejorar resultados enriquecidos y descubribilidad por modelos de IA -->
-    <script type="application/ld+json">
+            "contactType": "reservas",
+            "areaServed": "UY",
+            "availableLanguage": ["es"]
+          }],
+          "sameAs": ["https://www.instagram.com/victoriapuig.psico"]
+        },
         {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "¿Cómo agendo una consulta?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Podés contactarme por WhatsApp al +59899945459 o completar el formulario en la sección 'Agendá tu consulta' del sitio."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Atendés presencial y online?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Sí: presencial en Pocitos y Solymar, y sesiones online por Zoom o Google Meet."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "¿Qué enfoque usás en la terapia?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Trabajo desde la Terapia Cognitivo-Conductual (TCC) integrando herramientas de psicología de la salud y del deporte para mejorar bienestar y rendimiento."
-                    }
-                }
-            ]
+          "@type": "OfferCatalog",
+          "@id": "https://victoriapuig.com/#servicios",
+          "name": "Servicios de psicología",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://victoriapuig.com/#servicio-ansiedad",
+                "name": "Gestión de ansiedad y estrés",
+                "serviceType": "Terapia cognitivo-conductual para la ansiedad",
+                "description": "Trabajo con técnicas de TCC para identificar disparadores, reducir la reactividad y recuperar recursos de calma ante ataques de pánico, autoexigencia, agotamiento y problemas de regulación emocional.",
+                "provider": { "@id": "https://victoriapuig.com/#practice" },
+                "about": { "@type": "Thing", "name": "Trastornos de ansiedad", "sameAs": "https://www.wikidata.org/wiki/Q544006" }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://victoriapuig.com/#servicio-habitos",
+                "name": "Bienestar y hábitos sostenibles",
+                "serviceType": "Psicología de la salud",
+                "description": "Acompañamiento para construir hábitos y rutinas sostenibles, mejorar la toma de decisiones cotidianas y sostener cambios alineados con los objetivos personales.",
+                "provider": { "@id": "https://victoriapuig.com/#practice" }
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "@id": "https://victoriapuig.com/#servicio-deporte",
+                "name": "Entrenamiento mental y rendimiento",
+                "serviceType": "Psicología del deporte",
+                "description": "Entrenamiento de habilidades psicológicas para el deporte y la vida: autoconfianza, motivación, atención y concentración, toma de decisiones bajo presión y tolerancia a la frustración.",
+                "provider": { "@id": "https://victoriapuig.com/#practice" },
+                "about": { "@type": "Thing", "name": "Psicología del deporte", "sameAs": "https://www.wikidata.org/wiki/Q632190" }
+              }
+            }
+          ]
+        },
+        {
+          "@type": ["WebPage", "FAQPage"],
+          "@id": "https://victoriapuig.com/#webpage",
+          "url": "https://victoriapuig.com/",
+          "name": "Psicóloga en Montevideo y Ciudad de la Costa | Lic. Victoria Puig",
+          "description": "Lic. Victoria Puig, psicóloga cognitivo-conductual. Consulta presencial en Pocitos (Montevideo) y Solymar (Ciudad de la Costa), y sesiones online.",
+          "inLanguage": "es-UY",
+          "isPartOf": { "@id": "https://victoriapuig.com/#website" },
+          "about": { "@id": "https://victoriapuig.com/#practice" },
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://victoriapuig.com/img/foto_victoria_puig-800.webp"
+          },
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Dónde atendés en Montevideo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En Pocitos, en Lorenzo Justiniano Pérez esquina 26 de Marzo. Es una zona con buena conexión de ómnibus y a pocas cuadras de la Rambla. La atención es siempre con cita previa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Atendés en Ciudad de la Costa o Solymar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. Atiendo de forma presencial en Solymar, Ciudad de la Costa (Canelones). La dirección exacta se coordina al momento de agendar la consulta."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo agendo una consulta?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Podés escribirme por WhatsApp al +598 99 945 459 o completar el formulario de la sección «Agendá tu consulta». Respondo para coordinar día, horario y modalidad."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Atendés presencial y online?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, las dos modalidades. Presencial en Pocitos (Montevideo) y en Solymar (Ciudad de la Costa), y online por Zoom o Google Meet con la misma duración y frecuencia que las sesiones presenciales."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto dura una sesión?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Las sesiones son individuales y duran 50 minutos. La frecuencia se define en conjunto según el motivo de consulta y el momento del proceso."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué es la Terapia Cognitivo-Conductual (TCC)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Es un enfoque práctico basado en evidencia científica que identifica y modifica los pensamientos, creencias y conductas que sostienen el malestar. Al cambiar cómo pensamos y actuamos, cambia también cómo nos sentimos y cómo vivimos."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿En qué temas puedo consultarte?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Trabajo en tres grandes áreas: gestión de ansiedad y estrés, bienestar y construcción de hábitos sostenibles, y entrenamiento mental y rendimiento para el deporte y la vida."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Son terapias largas?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No se trata de terapias eternas. El trabajo se diseña de forma personalizada, con objetivos definidos en conjunto y un acompañamiento enfocado y activo, orientado a generar cambios concretos que puedas sostener en tu vida cotidiana."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Podés atenderme si vivo fuera de Uruguay?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí. La modalidad online por Zoom o Google Meet permite sostener el proceso desde cualquier lugar; solo coordinamos el horario según la diferencia horaria."
+              }
+            }
+          ]
         }
+      ]
+    }
     </script>
 
-    <!-- Google Analytics (GA4) - sustituir MEASUREMENT_ID por tu ID de medición -->
+    <!-- Google Analytics (GA4) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVJCEH60ED"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);} 
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'G-PVJCEH60ED');
     </script>
 
-    <!-- LocalBusiness schema para mejorar indexación local y descubribilidad por modelos IA -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Lic. Victoria Puig",
-      "description": "Psicóloga Cognitivo-Conductual en Montevideo y Ciudad de la Costa. Atención presencial y online.",
-      "url": "https://www.victoriapuig.com",
-      "telephone": "+59899945459",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Montevideo",
-        "addressRegion": "Montevideo",
-        "addressCountry": "UY"
-      },
-      "sameAs": [
-        "https://www.instagram.com/victoriapuig.psico",
-        "https://wa.me/59899945459"
-      ],
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "telephone": "+59899945459",
-        "contactType": "customer service",
-        "areaServed": "UY",
-        "availableLanguage": ["es"]
-      }]
-    }
-    </script>
-
-    <style>
-        :root {
-            --pastel-salmon: #FFF5F2;
-            --salmon-accent: #E88D7D;
-            --text-main: #4A4442;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-            color: var(--text-main);
-            background-color: #fdfcfb;
-            line-height: 1.5;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-family: 'Playfair Display', serif;
-            line-height: 1.15;
-        }
-
-        .nav-link {
-            position: relative;
-            transition: color 0.3s;
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -4px;
-            left: 0;
-            background-color: var(--salmon-accent);
-            transition: width 0.3s;
-        }
-
-        .nav-link:hover::after {
-            width: 100%;
-        }
-
-        /* .brand-logo-container {
-            height: 48px;
-            display: flex;
-            align-items: center;
-        } */
-
-        .brand-logo {
-            max-height: 38px;
-            width: auto;
-            object-fit: contain;
-            /* Eliminamos filtros que puedan nublar la imagen */
-        }
-
-        .map-container {
-            filter: grayscale(0.1) sepia(0.1);
-            transition: all 0.5s ease;
-        }
-
-        .map-container:hover {
-            filter: none;
-        }
-
-        .btn-shadow {
-            box-shadow: 0 10px 25px -5px rgba(232, 141, 125, 0.4);
-        }
-
-        .details-content {
-            max-height: 0;
-            overflow: hidden;
-            opacity: 0;
-            transition: max-height 0.4s ease, opacity 0.3s ease;
-            margin-top: 1rem;
-        }
-
-        .details-content.open {
-            max-height: 600px;
-            opacity: 1;
-        }
-
-        .rotate-icon svg {
-            transition: transform 0.3s ease;
-        }
-
-        .rotate-icon.open svg {
-            transform: rotate(45deg);
-            /* convierte + en × */
-        }
-
-        @media (max-width: 768px) {
-            h1 { line-height: 1.1 !important; }
-            section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
-            .hero-section { padding-top: 7rem !important; padding-bottom: 3rem !important; }
-        }
-    </style>
 </head>
 
 <body class="bg-stone-50 overflow-x-hidden">
@@ -263,12 +333,12 @@
         <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <a href="#inicio" class="flex items-center space-x-3 text-left group">
                 <div class="brand-logo-container">
-                    <img src="img/logo.svg" alt="Logotipo Lic. Victoria Puig"
-                        class="brand-logo transition-transform group-hover:scale-105" width="140" height="36" loading="eager">
+                    <img src="img/logo-160.webp" alt="Logotipo Lic. Victoria Puig"
+                        class="brand-logo transition-transform group-hover:scale-105" width="36" height="38" loading="eager" decoding="async" fetchpriority="high">
                 </div>
                 <div class="flex flex-col">
                     <span class="text-xl sm:text-2xl font-semibold tracking-tight text-stone-900 leading-none">
-                        Lic. Victoria<span class="text-[#E88D7D] italic font-medium">Puig</span>
+                        Lic. Victoria<span class="text-[#AD4E3B] italic font-medium">Puig</span>
                     </span>
                 </div>
             </a>
@@ -279,10 +349,8 @@
                     class="nav-link text-xs uppercase tracking-widest font-medium text-stone-600 hover:text-stone-900">Inicio</a>
                 <a href="#mi-propuesta"
                     class="nav-link text-xs uppercase tracking-widest font-medium text-stone-600 hover:text-stone-900">Propuesta</a>
-                <!-- <a href="#opiniones"
-                    class="nav-link text-xs uppercase tracking-widest font-medium text-stone-600 hover:text-stone-900">Opiniones</a> -->
                 <a href="https://www.instagram.com/victoriapuig.psico" target="_blank" rel="noopener noreferrer"
-                    class="flex items-center space-x-2 text-[#E88D7D] hover:text-stone-900">
+                    class="flex items-center space-x-2 text-[#AD4E3B] hover:text-stone-900">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" class="opacity-95">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.427.405a4.92 4.92 0 011.73 1.01 4.92 4.92 0 011.01 1.73c.165.457.351 1.257.405 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.427a4.92 4.92 0 01-1.01 1.73 4.92 4.92 0 01-1.73 1.01c-.457.165-1.257.351-2.427.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.427-.405a4.92 4.92 0 01-1.73-1.01 4.92 4.92 0 01-1.01-1.73c-.165-.457-.351-1.257-.405-2.427C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.427a4.92 4.92 0 011.01-1.73 4.92 4.92 0 011.73-1.01c.457-.165 1.257-.351 2.427-.405C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.332.013 7.052.072 5.77.13 4.835.346 4.042.66a6.92 6.92 0 00-2.5 1.63A6.92 6.92 0 00.66 4.042C.346 4.835.13 5.77.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.058 1.282.274 2.217.588 3.01a6.92 6.92 0 001.63 2.5 6.92 6.92 0 002.5 1.63c.793.314 1.728.53 3.01.588C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.282-.058 2.217-.274 3.01-.588a6.92 6.92 0 002.5-1.63 6.92 6.92 0 001.63-2.5c.314-.793.53-1.728.588-3.01.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.058-1.282-.274-2.217-.588-3.01a6.92 6.92 0 00-1.63-2.5 6.92 6.92 0 00-2.5-1.63c-.793-.314-1.728-.53-3.01-.588C15.668.013 15.259 0 12 0z"/>
                         <path d="M12 5.838A6.162 6.162 0 1018.162 12 6.169 6.169 0 0012 5.838zm0 10.162A4 4 0 1116 12a4 4 0 01-4 4z"/>
@@ -291,8 +359,8 @@
                     <span class="text-xs uppercase tracking-widest font-medium hidden lg:inline">Instagram</span>
                 </a>
 
-                <a href="https://wa.me/59899945459" target="_blank"
-                    class="bg-[#E88D7D] text-white px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#D67A6B] transition-all btn-shadow flex items-center space-x-2">
+                <a href="https://wa.me/59899945459" target="_blank" rel="noopener"
+                    class="bg-[#AD4E3B] text-white px-6 py-2.5 rounded-full text-xs uppercase tracking-widest font-bold hover:bg-[#8F3F2E] transition-all btn-shadow flex items-center space-x-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                         fill="currentColor">
                         <path
@@ -303,7 +371,8 @@
             </div>
 
             <!-- Mobile Menu Toggle -->
-            <button class="lg:hidden text-stone-800 p-2" onclick="toggleMenu()" aria-label="Abrir menú">
+            <button class="lg:hidden text-stone-800 p-2" onclick="toggleMenu()" aria-label="Abrir menú"
+                aria-controls="mobileMenu" aria-expanded="false">
                 <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
@@ -316,17 +385,16 @@
             class="hidden lg:hidden bg-white border-t border-stone-50 flex flex-col p-8 space-y-6 shadow-xl text-center">
             <a href="#inicio" onclick="toggleMenu()" class="text-xl font-medium">Inicio</a>
             <a href="#mi-propuesta" onclick="toggleMenu()" class="text-xl font-medium">Propuesta</a>
-            <!-- <a href="#opiniones" onclick="toggleMenu()" class="text-xl font-medium">Opiniones</a> -->
             <a href="https://www.instagram.com/victoriapuig.psico" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-3 text-sm font-medium text-stone-700 hover:text-stone-900" onclick="toggleMenu()" aria-label="Instagram">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-[#E88D7D]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-[#AD4E3B]">
                     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.427.405a4.92 4.92 0 011.73 1.01 4.92 4.92 0 011.01 1.73c.165.457.351 1.257.405 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.427a4.92 4.92 0 01-1.01 1.73 4.92 4.92 0 01-1.73 1.01c-.457.165-1.257.351-2.427.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.427-.405a4.92 4.92 0 01-1.73-1.01 4.92 4.92 0 01-1.01-1.73c-.165-.457-.351-1.257-.405-2.427C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.427a4.92 4.92 0 011.01-1.73 4.92 4.92 0 011.73-1.01c.457-.165 1.257-.351 2.427-.405C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.332.013 7.052.072 5.77.13 4.835.346 4.042.66a6.92 6.92 0 00-2.5 1.63A6.92 6.92 0 00.66 4.042C.346 4.835.13 5.77.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.058 1.282.274 2.217.588 3.01a6.92 6.92 0 001.63 2.5 6.92 6.92 0 002.5 1.63c.793.314 1.728.53 3.01.588C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.282-.058 2.217-.274 3.01-.588a6.92 6.92 0 002.5-1.63 6.92 6.92 0 001.63-2.5c.314-.793.53-1.728.588-3.01.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.058-1.282-.274-2.217-.588-3.01a6.92 6.92 0 00-1.63-2.5 6.92 6.92 0 00-2.5-1.63c-.793-.314-1.728-.53-3.01-.588C15.668.013 15.259 0 12 0z"/>
                     <path d="M12 5.838A6.162 6.162 0 1018.162 12 6.169 6.169 0 0012 5.838zm0 10.162A4 4 0 1116 12a4 4 0 01-4 4z"/>
                     <circle cx="18.406" cy="5.594" r="1.44"/>
                 </svg>
                 <span class="text-sm">Instagram</span>
             </a>
-            <a href="https://wa.me/59899945459" target="_blank" onclick="toggleMenu()"
-                class="bg-[#E88D7D] text-white px-6 py-3 rounded-xl font-medium flex items-center justify-center space-x-2">
+            <a href="https://wa.me/59899945459" target="_blank" rel="noopener" onclick="toggleMenu()"
+                class="bg-[#AD4E3B] text-white px-6 py-3 rounded-xl font-medium flex items-center justify-center space-x-2">
                 <span>Contactame</span>
             </a>
         </div>
@@ -340,11 +408,23 @@
                 <div class="order-2 lg:order-1 text-center lg:text-left space-y-8 animate-fade-in">
                     <div class="space-y-4">
                         <span
-                            class="text-[#E88D7D] font-semibold tracking-widest uppercase text-xs block">Bienvenida/o</span>
-                        <h1 class="text-4xl md:text-5xl lg:text-6xl text-stone-900 font-bold leading-tight">Hola, soy
-                            Victoria Puig</h1>
-                        <p class="text-lg md:text-xl lg:text-2xl text-[#E88D7D] font-medium italic leading-relaxed">
+                            class="text-[#AD4E3B] font-semibold tracking-widest uppercase text-xs block">Hola, soy
+                            Victoria Puig</span>
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl text-stone-900 font-bold leading-tight">Psicóloga en
+                            Montevideo y Ciudad de la Costa</h1>
+                        <p class="text-lg md:text-xl lg:text-2xl text-[#AD4E3B] font-medium italic leading-relaxed">
                             Psicóloga Cognitivo-Conductual y Magíster en Psicología de la Salud y del Deporte.
+                        </p>
+                        <p class="text-sm md:text-base text-stone-600 font-medium">
+                            Consulta presencial en Pocitos y Solymar · Sesiones online
+                        </p>
+                        <p class="text-xs text-stone-600 leading-relaxed">
+                            Habilitada por el <strong class="font-semibold">Ministerio de Salud Pública</strong> —
+                            Reg. profesional N.º 159578.
+                            <a href="https://www.gub.uy/tramites/infotitulos-consultas-registro-profesionales-salud"
+                                target="_blank" rel="noopener"
+                                class="text-[#AD4E3B] font-semibold underline underline-offset-2 hover:text-stone-900">Verificar
+                                en el registro del MSP</a>
                         </p>
                     </div>
 
@@ -372,6 +452,11 @@
                             decisiones cotidianas.
                             Acompaño a generar cambios posibles, sostenibles y alineados con los objetivos personales.
                         </p>
+                        <p>
+                            Atiendo de forma presencial en <strong>Pocitos, Montevideo</strong> y en
+                            <strong>Solymar, Ciudad de la Costa</strong>, y también
+                            <strong>online</strong> desde cualquier punto de Uruguay o del exterior.
+                        </p>
                         <p class="font-semibold text-stone-800">
                             Si estás acá, ya hay una intención de cambio. Podemos trabajar juntos/as para transformarla
                             en
@@ -381,7 +466,7 @@
 
                     <div class="flex flex-col sm:flex-row gap-5 pt-4 justify-center lg:justify-start">
                         <a href="#contacto"
-                            class="bg-[#E88D7D] text-white px-10 py-4 rounded-full text-center text-lg font-semibold hover:bg-[#D67A6B] transition-all transform hover:scale-105 btn-shadow">
+                            class="bg-[#AD4E3B] text-white px-10 py-4 rounded-full text-center text-lg font-semibold hover:bg-[#8F3F2E] transition-all transform hover:scale-105 btn-shadow">
                             Empezar proceso
                         </a>
                         <a href="#mi-propuesta"
@@ -394,8 +479,12 @@
                 <div class="order-1 lg:order-2 relative">
                     <div
                         class="aspect-[4/5] bg-stone-200 rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl relative z-10 mx-auto max-w-sm md:max-w-md border-[8px] md:border-[12px] border-white">
-                        <img src="img/foto_victoria_puig.webp" alt="Lic. Victoria Puig - Psicóloga en Montevideo"
-                            class="w-full h-full object-cover" loading="eager" width="800" height="1000">
+                        <img src="img/foto_victoria_puig-800.webp"
+                            srcset="img/foto_victoria_puig-400.webp 400w, img/foto_victoria_puig-600.webp 600w, img/foto_victoria_puig-800.webp 800w, img/foto_victoria_puig-1066.webp 1066w"
+                            sizes="(min-width: 1024px) 448px, min(384px, 92vw)"
+                            alt="Lic. Victoria Puig, psicóloga cognitivo-conductual en Montevideo y Ciudad de la Costa"
+                            class="w-full h-full object-cover" loading="eager" fetchpriority="high" decoding="async"
+                            width="800" height="1201">
                     </div>
                     <div
                         class="absolute -bottom-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-[#FFF5F2] rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse">
@@ -422,7 +511,7 @@
 
                 <!-- Detalles de Modalidad -->
                 <div
-                    class="flex flex-wrap justify-center gap-6 md:gap-12 mb-10 text-stone-500 font-medium py-6 border-y border-stone-200/60">
+                    class="flex flex-wrap justify-center gap-6 md:gap-12 mb-10 text-stone-600 font-medium py-6 border-y border-stone-200/60">
                     <div class="flex items-center space-x-2">
                         <svg class="w-5 h-5 text-salmon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -451,7 +540,7 @@
                     <div class="text-center mb-8">
                         <h3 class="text-3xl md:text-4xl font-semibold text-stone-900 mb-2">¿En qué puedo acompañarte?
                         </h3>
-                        <p class="text-[#E88D7D] font-medium italic">Desde un enfoque psicológico basado en evidencia.
+                        <p class="text-[#AD4E3B] font-medium italic">Desde un enfoque psicológico basado en evidencia.
                         </p>
                     </div>
 
@@ -463,7 +552,7 @@
                             <p class="text-salmon font-medium text-sm mb-6">Reducir alerta, recuperar calma</p>
                             <button onclick="toggleDetails('det-1', this)" class="group flex items-center gap-3 px-5 py-3 rounded-full
                bg-pastel-salmon text-salmon font-medium
-               hover:bg-salmon hover:text-[#E88D7D]
+               hover:bg-salmon hover:text-[#AD4E3B]
                transition-all rotate-icon">
 
                                 <span class="icon flex items-center justify-center
@@ -481,7 +570,7 @@
 
 
                             <div id="det-1" class="details-content text-center">
-                                <p class="text-stone-500 text-sm leading-[1.8]">Sensación de estar en alerta, ataques de
+                                <p class="text-stone-600 text-sm leading-[1.8]">Sensación de estar en alerta, ataques de
                                     pánico, autoexigencia y autocrítica, dificultad para descansar y disfrutar,
                                     agotamiento y problemas de regulación emocional. <br><br>Trabajo con técnicas TCC
                                     para identificar disparadores, reducir reactividad y recuperar recursos de calma.
@@ -497,7 +586,7 @@
                             </p>
                             <button onclick="toggleDetails('det-2', this)" class="group flex items-center gap-3 px-5 py-3 rounded-full
                bg-pastel-salmon text-salmon font-medium
-               hover:bg-salmon hover:text-[#E88D7D]
+               hover:bg-salmon hover:text-[#AD4E3B]
                transition-all rotate-icon">
 
                                 <span class="icon flex items-center justify-center
@@ -514,7 +603,7 @@
                             </button>
 
                             <div id="det-2" class="details-content text-center">
-                                <p class="text-stone-500 text-sm leading-[1.8]">Dificultad para tomar decisiones,
+                                <p class="text-stone-600 text-sm leading-[1.8]">Dificultad para tomar decisiones,
                                     mantener cambios, crear y sostener hábitos saludables, reorganizar rutinas y
                                     prioridades. <br><br>Utilizo técnicas basadas en evidencia para diseñar una
                                     estrategia específica para el cambio de conducta. Realizo intervenciones prácticas y
@@ -531,7 +620,7 @@
                                 vida.</p>
                             <button onclick="toggleDetails('det-3', this)" class="group flex items-center gap-3 px-5 py-3 rounded-full
                bg-pastel-salmon text-salmon font-medium
-               hover:bg-salmon hover:text-[#E88D7D]
+               hover:bg-salmon hover:text-[#AD4E3B]
                transition-all rotate-icon">
 
                                 <span class="icon flex items-center justify-center
@@ -548,7 +637,7 @@
                             </button>
 
                             <div id="det-3" class="details-content text-center">
-                                <p class="text-stone-500 text-sm leading-[1.8]">Autoconfianza, motivación, atención y
+                                <p class="text-stone-600 text-sm leading-[1.8]">Autoconfianza, motivación, atención y
                                     concentración, toma de decisiones bajo presión, gestión de pensamientos y emociones,
                                     comunicación y liderazgo, tolerancia a la frustración, entre otros.
                                     <br><br>Cualquier deportista de alto rendimiento o cualquier persona que practique
@@ -567,7 +656,7 @@
                     class="bg-white rounded-[2.5rem] md:rounded-[4rem] p-10 md:p-20 border border-[#F5E6E1] relative overflow-hidden">
                     <div class="relative z-10 max-w-4xl mx-auto">
                         <h3
-                            class="text-2xl md:text-3xl font-semibold text-[#E88D7D] mb-12 text-center uppercase tracking-widest font-title">
+                            class="text-2xl md:text-3xl font-semibold text-[#AD4E3B] mb-12 text-center uppercase tracking-widest font-title">
                             ¿Qué podés esperar del proceso conmigo?</h3>
 
                         <div class="grid gap-10">
@@ -622,140 +711,6 @@
             </div>
         </section>
 
-        <!-- Opiniones -->
-        <!-- <section id="opiniones" class="py-24 px-4 sm:px-6 bg-[#FFF5F2] scroll-mt-20">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-5xl mb-8 text-stone-900 font-bold">Opiniones de pacientes</h2>
-                    <div class="flex flex-col items-center justify-center space-y-4">
-                        <div
-                            class="bg-white px-8 py-5 rounded-3xl shadow-sm border border-[#F5E6E1] flex items-center space-x-6">
-                            <div class="flex flex-col items-center">
-                                <span class="text-4xl font-bold text-stone-900">5.0</span>
-                                <div class="flex text-yellow-400">
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="h-10 w-[1px] bg-stone-200"></div>
-                            <div class="flex flex-col text-left">
-                                <span class="font-bold text-stone-700">Google Review</span>
-                                <span class="text-xs text-stone-400">Pacientes satisfechos en Montevideo</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-3 gap-8 mb-12">
-                    <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between hover:shadow-md transition">
-                        <div>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex items-center space-x-3">
-                                    <div
-                                        class="w-10 h-10 bg-stone-100 rounded-full flex items-center justify-center overflow-hidden">
-                                        <img src="https://i.pravatar.cc/100?u=mga" alt="Paciente de Psicología"
-                                            class="w-full h-full object-cover" width="40" height="40" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <p class="font-bold text-stone-900 text-sm">María García</p>
-                                        <p class="text-[10px] text-stone-400 uppercase tracking-widest">Hace 2 meses</p>
-                                    </div>
-                                </div>
-                                <svg class="w-4 h-4 text-stone-200" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                                </svg>
-                            </div>
-                            <p class="text-stone-600 text-sm italic leading-relaxed">
-                                La Lic. Victoria me ayudó a entender mis ataques de pánico desde la primera sesión. Un
-                                enfoque muy práctico y cercano.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between hover:shadow-md transition">
-                        <div>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex items-center space-x-3">
-                                    <div
-                                        class="w-10 h-10 bg-[#E88D7D]/10 rounded-full flex items-center justify-center overflow-hidden">
-                                        <img src="https://i.pravatar.cc/100?u=jlo"
-                                            alt="Paciente de Psicología del Deporte" class="w-full h-full object-cover" width="40" height="40" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <p class="font-bold text-stone-900 text-sm">Javier López</p>
-                                        <p class="text-[10px] text-stone-400 uppercase tracking-widest">Hace 1 mes</p>
-                                    </div>
-                                </div>
-                                <svg class="w-4 h-4 text-stone-200" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                                </svg>
-                            </div>
-                            <p class="text-stone-600 text-sm italic leading-relaxed">
-                                Excelente profesional. El formato online funciona de maravilla y las herramientas que me
-                                dio han cambiado mi día a día.
-                            </p>
-                        </div>
-                    </div>
-                    <div
-                        class="bg-white p-8 rounded-3xl shadow-sm border border-stone-100 flex flex-col justify-between hover:shadow-md transition">
-                        <div>
-                            <div class="flex items-center justify-between mb-4">
-                                <div class="flex items-center space-x-3">
-                                    <div
-                                        class="w-10 h-10 bg-stone-100 rounded-full flex items-center justify-center overflow-hidden">
-                                        <img src="https://i.pravatar.cc/100?u=ama" alt="Paciente de Montevideo"
-                                            class="w-full h-full object-cover" width="40" height="40" loading="lazy">
-                                    </div>
-                                    <div>
-                                        <p class="font-bold text-stone-900 text-sm">Ana Martínez</p>
-                                        <p class="text-[10px] text-stone-400 uppercase tracking-widest">Hace 3 meses</p>
-                                    </div>
-                                </div>
-                                <svg class="w-4 h-4 text-stone-200" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
-                                </svg>
-                            </div>
-                            <p class="text-stone-600 text-sm italic leading-relaxed">
-                                La mejor decisión que tomé. Victoria es empática pero también directa con el trabajo que
-                                hay que hacer. Totalmente recomendable.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                    <a href="#"
-                        class="bg-white border border-stone-200 text-stone-700 px-8 py-3 rounded-full text-sm font-semibold hover:bg-white transition-all shadow-sm">
-                        Escribir una reseña
-                    </a>
-                    <a href="#" class="text-[#E88D7D] text-sm font-semibold hover:underline underline-offset-4">
-                        Ver todas en Google Maps →
-                    </a>
-                </div>
-            </div>
-        </section> -->
 
         <!-- Agenda y Contacto -->
         <section id="contacto" class="py-24 md:py-32 px-4 sm:px-6 bg-white border-t border-stone-200 scroll-mt-20">
@@ -766,7 +721,7 @@
                             <h2 class="text-4xl md:text-5xl mb-8 text-stone-900 font-bold text-left">Agendá tu consulta
                             </h2>
                             <div class="border-l-4 border-[#E88D7D]/30 pl-6 md:pl-8 italic text-left">
-                                <p class="text-lg md:text-xl text-stone-500 font-light leading-relaxed">
+                                <p class="text-lg md:text-xl text-stone-600 font-light leading-relaxed">
                                     Elegir psicóloga lleva tiempo y confianza. Por eso busco que este sea un espacio
                                     cómodo y cercano, donde puedas conocerme y decidir con tranquilidad si este proceso
                                     es para vos.
@@ -782,30 +737,30 @@
                                 <div class="grid sm:grid-cols-2 gap-4 text-left">
                                     <div class="space-y-1 text-left">
                                         <label for="name"
-                                            class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1 text-left">Nombre</label>
+                                            class="text-[10px] uppercase tracking-widest text-stone-600 font-bold ml-1 text-left">Nombre</label>
                                         <input type="text" id="name" name="name" placeholder="Tu nombre" required
-                                            class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all">
+                                            class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#AD4E3B] transition-all">
                                     </div>
                                     <div class="space-y-1 text-left">
                                         <label for="email"
-                                            class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1 text-left">Email</label>
+                                            class="text-[10px] uppercase tracking-widest text-stone-600 font-bold ml-1 text-left">Email</label>
                                         <input type="email" id="email" name="email" placeholder="Tu email" required
-                                            class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all">
+                                            class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#AD4E3B] transition-all">
                                     </div>
                                 </div>
                                 <div class="space-y-1 text-left">
                                     <label for="message"
-                                        class="text-[10px] uppercase tracking-widest text-stone-400 font-bold ml-1 text-left">Mensaje</label>
+                                        class="text-[10px] uppercase tracking-widest text-stone-600 font-bold ml-1 text-left">Mensaje</label>
                                     <textarea id="message" name="message" rows="3" placeholder="¿En qué puedo ayudarte?"
-                                        class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#E88D7D] transition-all"></textarea>
+                                        class="w-full px-5 py-3.5 bg-white border border-stone-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-[#E88D7D]/20 focus:border-[#AD4E3B] transition-all"></textarea>
                                 </div>
 
                                 <button type="submit" id="submitBtn"
-                                    class="w-full bg-[#E88D7D] text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-[#D67A6B] transition-all btn-shadow">
+                                    class="w-full bg-[#AD4E3B] text-white py-4 rounded-2xl font-bold uppercase tracking-widest text-sm hover:bg-[#8F3F2E] transition-all btn-shadow">
                                     Enviar Consulta
                                 </button>
 
-                                <div id="formStatus"
+                                <div id="formStatus" role="status" aria-live="polite"
                                     class="hidden text-center p-4 rounded-2xl font-medium text-sm transition-all duration-300">
                                 </div>
                             </form>
@@ -815,17 +770,18 @@
                     <!-- Información de Sedes -->
                     <div class="space-y-8 lg:sticky lg:top-32 text-left">
                         <div class="p-10 rounded-[3rem] bg-[#FFF5F2] border border-[#F5E6E1] shadow-sm">
-                            <h4 class="text-2xl font-bold text-stone-900 mb-8 text-left">Modalidad Presencial</h4>
+                            <h2 class="text-2xl font-bold text-stone-900 mb-8 text-left">Psicóloga presencial en Pocitos
+                                (Montevideo) y Solymar (Ciudad de la Costa)</h2>
 
                             <div
-                                class="mb-10 text-[#E88D7D] font-medium text-lg border-l-4 border-[#E88D7D] pl-4 italic text-left">
-                                Consulta Presencial en Montevideo y Ciudad de la Costa
+                                class="mb-10 text-[#AD4E3B] font-medium text-lg border-l-4 border-[#E88D7D] pl-4 italic text-left">
+                                También sesiones online desde cualquier parte del país
                             </div>
 
                             <div class="space-y-8">
                                 <div class="flex items-start space-x-5">
                                     <div
-                                        class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#E88D7D] shrink-0">
+                                        class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#AD4E3B] shrink-0">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -833,74 +789,145 @@
                                                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                         </svg>
                                     </div>
-                                    <div class="text-left">
-                                        <p class="font-bold text-stone-900 mb-1">Pocitos</p>
-                                        <p class="text-stone-500 text-sm leading-relaxed mb-3">Lorenzo Justiniano Pérez
-                                            y 26 de Marzo, Pocitos.</p>
+                                    <address class="text-left not-italic">
+                                        <p class="font-bold text-stone-900 mb-1">Pocitos, Montevideo</p>
+                                        <p class="text-stone-600 text-sm leading-relaxed mb-3">Lorenzo Justiniano Pérez
+                                            esq. 26 de Marzo, Pocitos.<br>Con cita previa.</p>
                                         <a href="https://www.google.com/maps/place/Lorenzo+Justiniano+P%C3%A9rez+%26+26+de+Marzo,+11300+Montevideo,+Departamento+de+Montevideo/@-34.9073626,-56.1480978,17z/data=!3m1!4b1!4m6!3m5!1s0x959f8112485db6af:0xbbc0e6c76b5fbffd!8m2!3d-34.907367!4d-56.1455229!16s%2Fg%2F11f3b9vyhv!18m1!1e1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
-                                            target="_blank"
-                                            class="inline-block text-[#E88D7D] text-xs font-bold uppercase tracking-widest border-b-2 border-[#E88D7D] pb-0.5 hover:text-stone-900 hover:border-stone-900 transition-all text-left">
+                                            target="_blank" rel="noopener" data-office="pocitos"
+                                            class="inline-block text-[#AD4E3B] text-xs font-bold uppercase tracking-widest border-b-2 border-[#E88D7D] pb-0.5 hover:text-stone-900 hover:border-stone-900 transition-all text-left">
                                             Ver en Google Maps
                                         </a>
-                                    </div>
+                                    </address>
                                 </div>
 
                                 <div class="flex items-start space-x-5">
                                     <div
-                                        class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#E88D7D] shrink-0">
+                                        class="w-10 h-10 bg-white rounded-xl shadow-sm flex items-center justify-center text-[#AD4E3B] shrink-0">
                                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                                 d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                         </svg>
                                     </div>
-                                    <div class="text-left text-left">
-                                        <p class="font-bold text-stone-900 mb-1">Solymar</p>
-                                        <p class="text-stone-500 text-sm leading-relaxed mb-3">Ciudad de la Costa,
-                                            Canelones.</p>
-                                        <a href="https://www.google.com/maps/place/C.+40,+15800+Ciudad+de+la+Costa,+Departamento+de+Canelones/@-34.8251066,-55.9772382,18z/data=!3m1!4b1!4m14!1m7!3m6!1s0x959f89b2bbbcf6f9:0x2ea685b000653252!2sClub+H%C3%ADpico+Solymar!8m2!3d-34.8283628!4d-55.9794741!16s%2Fg%2F11c74kvps3!3m5!1s0x959f89b3ae73de7d:0x332aca0ce8548d62!8m2!3d-34.8251088!4d-55.9759507!16s%2Fg%2F11h1d_jf43!18m1!1e1?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
-                                            target="_blank"
-                                            class="inline-block text-[#E88D7D] text-xs font-bold uppercase tracking-widest border-b-2 border-[#E88D7D] pb-0.5 hover:text-stone-900 hover:border-stone-900 transition-all text-left">
-                                            Ver en Google Maps
+                                    <address class="text-left not-italic">
+                                        <p class="font-bold text-stone-900 mb-1">Solymar, Ciudad de la Costa</p>
+                                        <p class="text-stone-600 text-sm leading-relaxed mb-3">Solymar, Ciudad de la
+                                            Costa, Canelones.<br>Dirección exacta al coordinar la consulta.</p>
+                                        <a href="https://wa.me/59899945459" target="_blank" rel="noopener"
+                                            data-origen="sede-solymar"
+                                            class="inline-block text-[#AD4E3B] text-xs font-bold uppercase tracking-widest border-b-2 border-[#E88D7D] pb-0.5 hover:text-stone-900 hover:border-stone-900 transition-all text-left">
+                                            Consultar disponibilidad
                                         </a>
-                                    </div>
+                                    </address>
                                 </div>
                             </div>
 
                             <div class="mt-12 pt-8 border-t border-[#F5E6E1] text-left">
-                                <p class="text-xs text-stone-400 font-medium uppercase tracking-widest text-left">
+                                <p class="text-xs text-stone-600 font-medium uppercase tracking-widest text-left">
                                     También disponible:</p>
                                 <p class="text-stone-700 font-medium mt-1 italic text-left">Sesiones Online vía Zoom /
                                     Google Meet</p>
+                            </div>
+
+                            <div class="mt-8 pt-8 border-t border-[#F5E6E1] text-left space-y-3">
+                                <p class="text-xs text-stone-600 font-medium uppercase tracking-widest text-left">
+                                    Contacto directo:</p>
+                                <a href="tel:+59899945459"
+                                    class="flex items-center gap-3 text-stone-800 font-semibold hover:text-[#AD4E3B] transition-colors">
+                                    <svg class="w-5 h-5 text-[#AD4E3B] shrink-0" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    +598 99 945 459
+                                </a>
+                                <a href="https://wa.me/59899945459" target="_blank" rel="noopener"
+                                    data-origen="sedes"
+                                    class="flex items-center gap-3 text-stone-800 font-semibold hover:text-[#AD4E3B] transition-colors">
+                                    <svg class="w-5 h-5 text-[#AD4E3B] shrink-0" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.893-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.556-5.332 11.893-11.893 11.893-2.007 0-3.967-.505-5.717-1.46l-6.276 1.676zm6.302-4.212l.363.216c1.336.796 2.871 1.216 4.442 1.216 4.703 0 8.532-3.829 8.532-8.532 0-2.274-.885-4.413-2.493-6.022-1.607-1.607-3.747-2.492-6.039-2.492-4.704 0-8.532 3.828-8.532 8.532 0 1.67.481 3.303 1.391 4.73l.237.373-1.001 3.655 3.748-.976z" />
+                                    </svg>
+                                    Escribir por WhatsApp
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <!-- FAQ -->
-    <section id="faq" class="py-16 bg-[#FFF5F2] scroll-mt-20">
+        <!-- FAQ -->
+        <section id="faq" class="py-16 bg-[#FFF5F2] scroll-mt-20">
         <div class="max-w-4xl mx-auto px-4 sm:px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-stone-900 mb-6 text-center">Preguntas frecuentes</h2>
             <div class="space-y-4">
                 <details class="bg-white p-6 rounded-2xl border border-stone-100">
+                    <summary class="font-semibold cursor-pointer">¿Dónde atendés en Montevideo?</summary>
+                    <div class="mt-3 text-stone-600">En Pocitos, en Lorenzo Justiniano Pérez esquina 26 de Marzo. Es una
+                        zona con buena conexión de ómnibus y a pocas cuadras de la Rambla. La atención es siempre con
+                        cita previa.</div>
+                </details>
+
+                <details class="bg-white p-6 rounded-2xl border border-stone-100">
+                    <summary class="font-semibold cursor-pointer">¿Atendés en Ciudad de la Costa o Solymar?</summary>
+                    <div class="mt-3 text-stone-600">Sí. Atiendo de forma presencial en Solymar, Ciudad de la Costa
+                        (Canelones). La dirección exacta se coordina al momento de agendar la consulta.</div>
+                </details>
+
+                <details class="bg-white p-6 rounded-2xl border border-stone-100">
                     <summary class="font-semibold cursor-pointer">¿Cómo agendo una consulta?</summary>
-                    <div class="mt-3 text-stone-600">Podés contactarme por WhatsApp al <strong>+598 9994 5459</strong> o completar el formulario en la sección "Agendá tu consulta" del sitio.</div>
+                    <div class="mt-3 text-stone-600">Podés escribirme por WhatsApp al <a href="tel:+59899945459"
+                            class="font-semibold text-[#AD4E3B] hover:underline">+598 99 945 459</a> o completar el
+                        formulario de la sección «Agendá tu consulta». Respondo para coordinar día, horario y modalidad.
+                    </div>
                 </details>
 
                 <details class="bg-white p-6 rounded-2xl border border-stone-100">
                     <summary class="font-semibold cursor-pointer">¿Atendés presencial y online?</summary>
-                    <div class="mt-3 text-stone-600">Sí: presencial en Pocitos y Solymar, y sesiones online por Zoom o Google Meet.</div>
+                    <div class="mt-3 text-stone-600">Sí, las dos modalidades. Presencial en Pocitos (Montevideo) y en
+                        Solymar (Ciudad de la Costa), y online por Zoom o Google Meet con la misma duración y frecuencia
+                        que las sesiones presenciales.</div>
                 </details>
 
                 <details class="bg-white p-6 rounded-2xl border border-stone-100">
-                    <summary class="font-semibold cursor-pointer">¿Qué enfoque usás en la terapia?</summary>
-                    <div class="mt-3 text-stone-600">Trabajo desde la Terapia Cognitivo-Conductual (TCC) integrando herramientas de psicología de la salud y del deporte para mejorar bienestar y rendimiento.</div>
+                    <summary class="font-semibold cursor-pointer">¿Cuánto dura una sesión?</summary>
+                    <div class="mt-3 text-stone-600">Las sesiones son individuales y duran 50 minutos. La frecuencia se
+                        define en conjunto según el motivo de consulta y el momento del proceso.</div>
+                </details>
+
+                <details class="bg-white p-6 rounded-2xl border border-stone-100">
+                    <summary class="font-semibold cursor-pointer">¿Qué es la Terapia Cognitivo-Conductual (TCC)?
+                    </summary>
+                    <div class="mt-3 text-stone-600">Es un enfoque práctico basado en evidencia científica que
+                        identifica y modifica los pensamientos, creencias y conductas que sostienen el malestar. Al
+                        cambiar cómo pensamos y actuamos, cambia también cómo nos sentimos y cómo vivimos.</div>
+                </details>
+
+                <details class="bg-white p-6 rounded-2xl border border-stone-100">
+                    <summary class="font-semibold cursor-pointer">¿En qué temas puedo consultarte?</summary>
+                    <div class="mt-3 text-stone-600">Trabajo en tres grandes áreas: gestión de ansiedad y estrés,
+                        bienestar y construcción de hábitos sostenibles, y entrenamiento mental y rendimiento para el
+                        deporte y la vida.</div>
+                </details>
+
+                <details class="bg-white p-6 rounded-2xl border border-stone-100">
+                    <summary class="font-semibold cursor-pointer">¿Son terapias largas?</summary>
+                    <div class="mt-3 text-stone-600">No se trata de terapias eternas. El trabajo se diseña de forma
+                        personalizada, con objetivos definidos en conjunto y un acompañamiento enfocado y activo,
+                        orientado a generar cambios concretos que puedas sostener en tu vida cotidiana.</div>
+                </details>
+
+                <details class="bg-white p-6 rounded-2xl border border-stone-100">
+                    <summary class="font-semibold cursor-pointer">¿Podés atenderme si vivo fuera de Uruguay?</summary>
+                    <div class="mt-3 text-stone-600">Sí. La modalidad online por Zoom o Google Meet permite sostener el
+                        proceso desde cualquier lugar; solo coordinamos el horario según la diferencia horaria.</div>
                 </details>
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-stone-900 text-stone-400 py-16 md:py-20 px-6">
@@ -908,12 +935,17 @@
             class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-12 md:space-y-0 text-center md:text-left">
             <div>
                 <div class="flex items-center space-x-3 mb-4 md:justify-start justify-center">
-                    <img src="img/logo.svg" alt="Logo Lic. Victoria Puig"
-                        class="h-8 w-auto filter brightness-0 invert opacity-80" width="120" height="32" loading="lazy">
+                    <img src="img/logo-160.webp" alt="Logo Lic. Victoria Puig"
+                        class="h-8 w-auto filter brightness-0 invert opacity-80" width="30" height="32" loading="lazy" decoding="async">
                     <div class="text-2xl font-semibold text-white leading-none font-title">Lic. Victoria Puig</div>
                 </div>
                 <p class="max-w-xs mx-auto md:mx-0 text-left text-sm leading-relaxed">Terapia Cognitivo-Conductual con
                     rigor científico y calidez humana en Montevideo y Ciudad de la Costa.</p>
+                <p class="max-w-xs mx-auto md:mx-0 mt-4 text-left text-xs leading-relaxed text-stone-400">
+                    Lic. María Victoria Puig Gómez — Licenciada en Psicología.<br>
+                    Habilitada por el Ministerio de Salud Pública del Uruguay.<br>
+                    Registro profesional N.º 159578.
+                </p>
 
                 <div class="mt-6 flex items-center space-x-4 justify-center md:justify-start">
                     <a href="https://www.instagram.com/victoriapuig.psico" target="_blank" rel="noopener noreferrer" class="text-[#E88D7D] hover:text-white" aria-label="Instagram">
@@ -927,27 +959,30 @@
             </div>
             <div class="flex space-x-12 text-sm text-right">
                 <div class="text-left">
-                    <h4 class="text-white font-medium mb-3 uppercase tracking-widest text-xs">Ubicaciones</h4>
+                    <p class="text-white font-medium mb-3 uppercase tracking-widest text-xs">Ubicaciones</p>
                     <p class="text-stone-300">Pocitos, Montevideo</p>
-                    <p class="text-stone-300">Solymar, Canelones</p>
+                    <p class="text-stone-300">Solymar, Ciudad de la Costa</p>
                 </div>
                 <div class="text-left">
-                    <h4 class="text-white font-medium mb-3 uppercase tracking-widest text-xs">Atención</h4>
-                    <p class="text-stone-300">Presencial & Online</p>
-                    <a href="https://wa.me/59899945459" target="_blank" class="text-salmon font-bold">WhatsApp →</a>
+                    <p class="text-white font-medium mb-3 uppercase tracking-widest text-xs">Atención</p>
+                    <p class="text-stone-300">Presencial &amp; Online</p>
+                    <a href="tel:+59899945459"
+                        class="block py-2 text-stone-300 hover:text-white">+598 99 945 459</a>
+                    <a href="https://wa.me/59899945459" target="_blank" rel="noopener" data-origen="footer"
+                        class="block py-2 text-[#E88D7D] font-bold hover:text-white">WhatsApp →</a>
                 </div>
             </div>
         </div>
 
         <div
-            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] opacity-40 text-center space-y-4 md:space-y-0">
+            class="max-w-7xl mx-auto mt-16 pt-8 border-t border-stone-800 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.3em] text-stone-400 text-center space-y-4 md:space-y-0">
             <p>&copy; 2026 Lic. Victoria Puig. Montevideo, Uruguay.</p>
             <p>Hecho con cuidado profesional.</p>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button (Mobile Friendly) -->
-    <a href="https://wa.me/59899945459" target="_blank"
+    <a href="https://wa.me/59899945459" target="_blank" rel="noopener"
         class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-40 hover:scale-110 active:scale-95 transition-transform md:bottom-8 md:right-8"
         aria-label="Contactar por WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
@@ -958,7 +993,7 @@
 
     <!-- Instagram Floating Button (avoid overlapping WhatsApp) -->
     <a href="https://www.instagram.com/victoriapuig.psico" target="_blank" rel="noopener noreferrer"
-        class="fixed bottom-6 left-6 bg-[#E88D7D] text-white p-3 rounded-full shadow-2xl z-40 hover:scale-110 active:scale-95 transition-transform md:bottom-8 md:left-8"
+        class="fixed bottom-6 left-6 bg-[#AD4E3B] text-white p-3 rounded-full shadow-2xl z-40 hover:scale-110 active:scale-95 transition-transform md:bottom-8 md:left-8"
         aria-label="Ir a Instagram">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.17.054 1.97.24 2.427.405a4.92 4.92 0 011.73 1.01 4.92 4.92 0 011.01 1.73c.165.457.351 1.257.405 2.427.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.405 2.427a4.92 4.92 0 01-1.01 1.73 4.92 4.92 0 01-1.73 1.01c-.457.165-1.257.351-2.427.405-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.427-.405a4.92 4.92 0 01-1.73-1.01 4.92 4.92 0 01-1.01-1.73c-.165-.457-.351-1.257-.405-2.427C2.175 15.747 2.163 15.367 2.163 12s.012-3.584.07-4.85c.054-1.17.24-1.97.405-2.427a4.92 4.92 0 011.01-1.73 4.92 4.92 0 011.73-1.01c.457-.165 1.257-.351 2.427-.405C8.416 2.175 8.796 2.163 12 2.163zM12 0C8.741 0 8.332.013 7.052.072 5.77.13 4.835.346 4.042.66a6.92 6.92 0 00-2.5 1.63A6.92 6.92 0 00.66 4.042C.346 4.835.13 5.77.072 7.052.013 8.332 0 8.741 0 12c0 3.259.013 3.668.072 4.948.058 1.282.274 2.217.588 3.01a6.92 6.92 0 001.63 2.5 6.92 6.92 0 002.5 1.63c.793.314 1.728.53 3.01.588C8.332 23.987 8.741 24 12 24s3.668-.013 4.948-.072c1.282-.058 2.217-.274 3.01-.588a6.92 6.92 0 002.5-1.63 6.92 6.92 0 001.63-2.5c.314-.793.53-1.728.588-3.01.059-1.28.072-1.689.072-4.948s-.013-3.668-.072-4.948c-.058-1.282-.274-2.217-.588-3.01a6.92 6.92 0 00-1.63-2.5 6.92 6.92 0 00-2.5-1.63c-.793-.314-1.728-.53-3.01-.588C15.668.013 15.259 0 12 0z"/>
@@ -970,8 +1005,43 @@
     <script>
         function toggleMenu() {
             const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
+            const isOpen = menu.classList.toggle('hidden') === false;
+            const btn = document.querySelector('[aria-controls="mobileMenu"]');
+            if (btn) {
+                btn.setAttribute('aria-expanded', String(isOpen));
+                btn.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+            }
         }
+
+        // --- Analítica: eventos de conversión ---------------------------------
+        // Sin tag manager. Un solo listener delegado cubre todos los enlaces de
+        // contacto. Marcá `generate_lead` como evento clave en GA4 para que
+        // aparezca en los informes de conversiones.
+        function track(name, params) {
+            if (typeof gtag === 'function') gtag('event', name, params || {});
+        }
+
+        document.addEventListener('click', function (e) {
+            const a = e.target.closest('a[href]');
+            if (!a) return;
+            const href = a.getAttribute('href') || '';
+            const where = a.dataset.origen
+                || (a.closest('header') ? 'header'
+                    : a.closest('footer') ? 'footer'
+                        : (a.closest('section') || {}).id || 'body');
+
+            if (href.indexOf('https://wa.me/') === 0) {
+                track('contacto_whatsapp', { origen: where });
+                track('generate_lead', { method: 'whatsapp', origen: where });
+            } else if (href.indexOf('instagram.com/') !== -1) {
+                track('click_instagram', { origen: where });
+            } else if (href.indexOf('google.com/maps') !== -1 || href.indexOf('maps.app.goo.gl') !== -1) {
+                track('click_maps', { sede: a.dataset.office || 'sin_definir', origen: where });
+            } else if (href.indexOf('tel:') === 0) {
+                track('click_telefono', { origen: where });
+                track('generate_lead', { method: 'telefono', origen: where });
+            }
+        }, true);
 
         const form = document.getElementById("contactForm");
 
@@ -1003,6 +1073,8 @@
                     status.classList.remove('hidden', 'text-red-700', 'bg-red-50', 'border-red-100');
                     status.classList.add('text-green-700', 'bg-green-50', 'border', 'border-green-100');
                     status.innerHTML = "¡Mensaje enviado con éxito! Te responderé pronto.";
+                    track('generate_lead', { method: 'formulario' });
+                    track('form_submit_success', { form_id: 'contactForm' });
                 } else {
                     // ERROR DE SERVIDOR
                     throw new Error();
@@ -1015,6 +1087,7 @@
                 status.classList.remove('hidden', 'text-green-700', 'bg-green-50', 'border-green-100');
                 status.classList.add('text-red-700', 'bg-red-50', 'border', 'border-red-100');
                 status.innerHTML = "Hubo un problema. Por favor, intenta de nuevo o contáctame por whatsapp.";
+                track('form_submit_error', { form_id: 'contactForm' });
             }
         });
 

@@ -1,0 +1,16 @@
+{
+  "name": "victoriapuig-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio de la Lic. Victoria Puig — Psicóloga (victoriapuig.com). Estático, se despliega con GitHub Pages.",
+  "scripts": {
+    "css": "tailwindcss -c ./tailwind.config.js -i ./src/input.css -o ./styles.css --minify",
+    "css:watch": "tailwindcss -c ./tailwind.config.js -i ./src/input.css -o ./styles.css --watch",
+    "img": "node tools/images.mjs",
+    "serve": "npx --yes serve ."
+  },
+  "devDependencies": {
+    "sharp": "^0.33.5",
+    "tailwindcss": "3.4.17"
+  }
+}
